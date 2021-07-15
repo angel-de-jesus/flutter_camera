@@ -5,7 +5,7 @@ import 'package:flutter_camera/src/pages/pageView/page2.dart';
 import 'package:flutter_camera/src/pages/pageView/page3.dart';
 import 'package:flutter_camera/src/pages/pageView/page4.dart';
 import 'package:flutter_camera/src/providers/ui_provider.dart';
-import 'package:flutter_camera/src/widgets/bottom_camera.dart';
+// import 'package:flutter_camera/src/widgets/bottom_camera.dart';
 import 'package:flutter_camera/src/widgets/custom_navigation.dart';
 import 'package:provider/provider.dart';
 

@@ -8,15 +8,15 @@ class Page3 extends StatelessWidget {
     
      return Column(
       children: [
+        Padding(padding: EdgeInsets.symmetric(vertical: 270)),
+        Padding(padding: EdgeInsets.symmetric(horizontal: 200)),
         FloatingActionButton(child: Icon(Icons.camera), onPressed: () async {
-          String barcodeScanRes = await FlutterBarcodeScanner.scanBarcode('#A03131','Cancelar',false,ScanMode.QR,);
-          openNavigations(barcodeScanRes);
-        },
-        ),
+          String barcodeScanRes = await FlutterBarcodeScanner.scanBarcode('#A03131','Cancelar',false,ScanMode.QR,);   
+          openNavigations(barcodeScanRes);   
+        },),
         
       ],
     );
-
   }
    
   void openNavigations(String barcodeScanRes) async =>

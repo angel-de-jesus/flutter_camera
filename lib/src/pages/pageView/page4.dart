@@ -13,20 +13,21 @@ class _MyPage4 extends State<Page4> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        
-        FloatingActionButton(child: Icon(Icons.camera), onPressed: () async {
-          String barcodeScanRes = await FlutterBarcodeScanner.scanBarcode('#A03131','Cancelar',false,ScanMode.QR,);
-          setState(() {
-            texto2=barcodeScanRes;
-          });
-        
-        },),
         Container(
           margin: const EdgeInsets.only(top: 230.0),
           child: Center(
             child: Text(texto2, textAlign: TextAlign.center,),
           ),
         ),
+        Padding(padding: EdgeInsets.symmetric(vertical: 147)),
+        FloatingActionButton(child: Icon(Icons.camera), onPressed: () async {
+          String barcodeScanRes = await FlutterBarcodeScanner.scanBarcode('#A03131','Cancelar',false,ScanMode.QR,);
+          setState(() {
+            texto2=barcodeScanRes;
+          });
+          
+        },),
+        
       ],
     );
 
