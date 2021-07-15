@@ -1,3 +1,7 @@
+# DESCRIPCION
+  En la vista 3 se encuntra el boton del scaner QR para el redireccionamiento a una pagina web.
+  En la vista 4 se encuntra el boton para mostrar el texto que contiene el codigo QR.
+
 # flutter_camera
 
 A new Flutter project.
